@@ -56,34 +56,16 @@
 
     public void add_At_position(int data,int position)
     {
-        // int count=1;
-
-        // if(position==1)
-        // {
-        //      add_At_start( data);
-        // }
-
+       
         node p=new node(data);
         node man=head;
 
-        // while(man.next!=null && count<position-1)
-        // {
-        //     man=man.next;
-        // }
         for (int i = 0; i < position - 1; i++) {
             man = man.next;
         }
         p.next = man.next;
         man.next = p;
 
-        // if(man.next==null)
-        // {
-        //     add_At_end(data);
-        // }
-
-        // node nextNode=man.next;
-        // man.next=p;
-        // p.next=nextNode;
     }
 
     public void display(){
